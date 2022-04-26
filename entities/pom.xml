@@ -1,0 +1,39 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.codeathon.entities</groupId>
+	<artifactId>entities</artifactId>
+	<packaging>jar</packaging>
+	<version>1.0.0</version>
+	<name>Entities</name>
+	<url>http://maven.apache.org</url>
+
+	<parent>
+		<groupId>com.cabin4j.suite</groupId>
+		<artifactId>cabin4j-suite</artifactId>
+		<version>1.0.6.RELEASE</version>
+		<relativePath>../cabin4j-suite/pom.xml</relativePath>
+	</parent>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.cabin4j.suite.entity.platform</groupId>
+			<artifactId>cabin4j-entity-platform</artifactId>
+			<version>${cabin4j-suite.version}</version>
+			<scope>system</scope>
+			<systemPath>${basedir}/../cabin4j-suite/generated-lib-entity/cabin4j-entity-platform.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>com.cabin4j.suite.entity.cms</groupId>
+			<artifactId>cabin4j-entity-cms2</artifactId>
+			<version>${cabin4j-suite.version}</version>
+			<scope>system</scope>
+			<systemPath>${basedir}/../cabin4j-suite/generated-lib-entity/cabin4j-entity-cms2.jar</systemPath>
+		</dependency>
+	</dependencies>
+	<build>
+		<finalName>entities</finalName>
+	</build>
+</project>
+
